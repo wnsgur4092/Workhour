@@ -9,18 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showSignInView = true
-
+    
     var body: some View {
         NavigationView {
             if showSignInView {
                 AuthenticationView(showSignInView: $showSignInView)
             } else {
-                // 여기에 AuthenticationView가 숨겨졌을 때 표시할 뷰를 넣습니다.
+                // 로그인된 사용자에게 보여줄 뷰
                 Text("Welcome to the app!")
             }
         }
     }
 }
+
 
 
 #Preview {

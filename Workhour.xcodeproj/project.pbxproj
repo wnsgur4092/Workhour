@@ -45,6 +45,7 @@
 		BF1950792B4DDBB700DD1F2A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1950782B4DDBB700DD1F2A /* Utilities.swift */; };
 		BF19507C2B4DDD7500DD1F2A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19507B2B4DDD7500DD1F2A /* AuthenticationManager.swift */; };
 		BF19507E2B4DE43400DD1F2A /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19507D2B4DE43400DD1F2A /* SignInGoogleHelper.swift */; };
+		BF1950812B4DF76700DD1F2A /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		BF1950782B4DDBB700DD1F2A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BF19507B2B4DDD7500DD1F2A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		BF19507D2B4DE43400DD1F2A /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		BF19507F2B4DEAC000DD1F2A /* Workhour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Workhour.entitlements; sourceTree = "<group>"; };
+		BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 		BF1950242B4DBCCC00DD1F2A /* Workhour */ = {
 			isa = PBXGroup;
 			children = (
+				BF19507F2B4DEAC000DD1F2A /* Workhour.entitlements */,
 				BF1950252B4DBCCC00DD1F2A /* WorkhourApp.swift */,
 				BF19507A2B4DDD6700DD1F2A /* AuthManager */,
 				BF1950772B4DDBAC00DD1F2A /* Utilities */,
@@ -162,6 +166,7 @@
 			children = (
 				BF19507B2B4DDD7500DD1F2A /* AuthenticationManager.swift */,
 				BF19507D2B4DE43400DD1F2A /* SignInGoogleHelper.swift */,
+				BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */,
 			);
 			path = AuthManager;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				BF1950262B4DBCCC00DD1F2A /* WorkhourApp.swift in Sources */,
 				BF1950792B4DDBB700DD1F2A /* Utilities.swift in Sources */,
 				BF19507C2B4DDD7500DD1F2A /* AuthenticationManager.swift in Sources */,
+				BF1950812B4DF76700DD1F2A /* SignInAppleHelper.swift in Sources */,
 				BF19507E2B4DE43400DD1F2A /* SignInGoogleHelper.swift in Sources */,
 				BF19506E2B4DD6C600DD1F2A /* AuthenticationView.swift in Sources */,
 			);
@@ -408,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Workhour/Workhour.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Workhour/Preview Content\"";
@@ -420,6 +427,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Workhour/Workhour.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Workhour/Preview Content\"";
@@ -450,6 +459,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
