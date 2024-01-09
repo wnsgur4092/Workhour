@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showSignInView = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            if showSignInView {
+                AuthenticationView(showSignInView: $showSignInView)
+            } else {
+                // 로그인된 사용자에게 보여줄 뷰
+                Text("Welcome to the app!")
+            }
         }
-        .padding()
     }
 }
+
+
 
 #Preview {
     ContentView()
