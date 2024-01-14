@@ -15,8 +15,18 @@ struct ContentView: View {
             if showSignInView {
                 AuthenticationView(showSignInView: $showSignInView)
             } else {
-                // 로그인된 사용자에게 보여줄 뷰
-                Text("Welcome to the app!")
+                VStack{
+                    HStack{
+                        Spacer()
+                        NavigationLink(destination: SettingView(showSignInView: $showSignInView)) {
+                            Image(systemName: "gear")
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    Text("Welcome to the app!")
+                }
             }
         }
     }

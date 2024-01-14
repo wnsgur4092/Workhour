@@ -11,9 +11,6 @@ import GoogleSignInSwift
 
 @MainActor
 final class AuthenticationViewModel : ObservableObject{
- 
-    let signInAppleHelper = SignInAppleHelper()
-    
     func signInGoogle() async throws{
         let helper = SignInGoogleHelper()
         let tokens = try await helper.signIn()
