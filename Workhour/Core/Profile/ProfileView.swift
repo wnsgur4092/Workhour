@@ -32,6 +32,10 @@ struct ProfileView: View {
                     Text("email: \(email.description)")
                 }
                 
+                if let name = user.name{
+                    Text("name: \(name)")
+                }
+                
                 if let photoUrl = user.photoUrl{
                     URLImageView(urlString: photoUrl)
                 }

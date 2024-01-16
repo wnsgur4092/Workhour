@@ -12,7 +12,7 @@ import GoogleSignInSwift
 struct GoogleSignInResultModel{
     let idToken : String
     let accessToken: String
-//    let name : String?
+    let name : String?
     let email : String?
 }
 
@@ -28,10 +28,10 @@ final class SignInGoogleHelper{
         guard let idToken : String = gidSignInResult.user.idToken?.tokenString else {throw URLError(.badServerResponse)}
         
         let accessToken = gidSignInResult.user.accessToken.tokenString
-//        let name = gidSignInResult.user.profile?.name
+        let name = gidSignInResult.user.profile?.name
         let email = gidSignInResult.user.profile?.email
         
-        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, email: email)
+        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, name: name, email: email)
         return tokens
     }
 }

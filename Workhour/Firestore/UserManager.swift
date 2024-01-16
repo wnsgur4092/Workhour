@@ -13,11 +13,13 @@ struct DBUser: Codable {
     let userId : String
     let email : String?
     let photoUrl : String?
+    let name : String?
     
     init(auth: AuthDataResultModel){
         self.userId = auth.uid
         self.email = auth.email
         self.photoUrl = auth.photoUrl
+        self.name = auth.name
     }
 }
 
