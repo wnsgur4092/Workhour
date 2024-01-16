@@ -13,7 +13,7 @@ struct GoogleSignInResultModel{
     let idToken : String
     let accessToken: String
 //    let name : String?
-//    let email : String?
+    let email : String?
 }
 
 final class SignInGoogleHelper{
@@ -29,9 +29,9 @@ final class SignInGoogleHelper{
         
         let accessToken = gidSignInResult.user.accessToken.tokenString
 //        let name = gidSignInResult.user.profile?.name
-//        let email = gidSignInResult.user.profile?.email
+        let email = gidSignInResult.user.profile?.email
         
-        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken)
+        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, email: email)
         return tokens
     }
 }

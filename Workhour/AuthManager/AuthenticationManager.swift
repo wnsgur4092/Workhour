@@ -11,10 +11,12 @@ import FirebaseAuth
 struct AuthDataResultModel{
     let uid: String
     let email : String?
+    let photoUrl : String?
     
     init(user: User){
         self.uid = user.uid
         self.email = user.email
+        self.photoUrl = user.photoURL?.absoluteString
     }
 }
 
@@ -25,10 +27,18 @@ enum AuthProviderOption : String {
 
 final class AuthenticationManager{
     static let shared = AuthenticationManager()
-    
+
     private init(){
         
     }
+    
+    func getAuthenticatedUser() throws -> AuthDataResultModel? {
+        guard let user = Auth.auth().currentUser else {
+            throw URLError(.badServerResponse)
+        }
+        return AuthDataResultModel(user: user)
+    }
+
     
     func getProviders() throws -> [AuthProviderOption] {
         guard let providerData = Auth.auth().currentUser?.providerData else {
