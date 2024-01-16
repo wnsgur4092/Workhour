@@ -46,6 +46,11 @@
 		BF19507C2B4DDD7500DD1F2A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19507B2B4DDD7500DD1F2A /* AuthenticationManager.swift */; };
 		BF19507E2B4DE43400DD1F2A /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19507D2B4DE43400DD1F2A /* SignInGoogleHelper.swift */; };
 		BF1950812B4DF76700DD1F2A /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */; };
+		BF555AFC2B53DC33008DD232 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555AFB2B53DC33008DD232 /* SettingView.swift */; };
+		BF555B002B566E48008DD232 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555AFF2B566E48008DD232 /* SettingViewModel.swift */; };
+		BF555B022B566E66008DD232 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B012B566E66008DD232 /* AuthenticationViewModel.swift */; };
+		BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B042B566E9D008DD232 /* ProfileView.swift */; };
+		BF555B082B567314008DD232 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B072B567314008DD232 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		BF19507D2B4DE43400DD1F2A /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		BF19507F2B4DEAC000DD1F2A /* Workhour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Workhour.entitlements; sourceTree = "<group>"; };
 		BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
+		BF555AFB2B53DC33008DD232 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		BF555AFF2B566E48008DD232 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		BF555B012B566E66008DD232 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		BF555B042B566E9D008DD232 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BF555B072B567314008DD232 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +135,10 @@
 			children = (
 				BF19507F2B4DEAC000DD1F2A /* Workhour.entitlements */,
 				BF1950252B4DBCCC00DD1F2A /* WorkhourApp.swift */,
+				BF555B062B567305008DD232 /* Firestore */,
+				BF555AFD2B566DF7008DD232 /* Core */,
 				BF19507A2B4DDD6700DD1F2A /* AuthManager */,
 				BF1950772B4DDBAC00DD1F2A /* Utilities */,
-				BF19506C2B4DD6B100DD1F2A /* Authentication */,
-				BF1950272B4DBCCC00DD1F2A /* ContentView.swift */,
 				BF1950292B4DBCCD00DD1F2A /* Assets.xcassets */,
 				BF19506F2B4DD87700DD1F2A /* GoogleService-Info.plist */,
 				BF1950762B4DD95100DD1F2A /* Info.plist */,
@@ -149,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				BF19506D2B4DD6C600DD1F2A /* AuthenticationView.swift */,
+				BF555B012B566E66008DD232 /* AuthenticationViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -169,6 +180,42 @@
 				BF1950802B4DF76700DD1F2A /* SignInAppleHelper.swift */,
 			);
 			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		BF555AFD2B566DF7008DD232 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF1950272B4DBCCC00DD1F2A /* ContentView.swift */,
+				BF555B032B566E95008DD232 /* Profile */,
+				BF555AFE2B566E28008DD232 /* Settings */,
+				BF19506C2B4DD6B100DD1F2A /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BF555AFE2B566E28008DD232 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BF555AFB2B53DC33008DD232 /* SettingView.swift */,
+				BF555AFF2B566E48008DD232 /* SettingViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BF555B032B566E95008DD232 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BF555B042B566E9D008DD232 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BF555B062B567305008DD232 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				BF555B072B567314008DD232 /* UserManager.swift */,
+			);
+			path = Firestore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +329,12 @@
 				BF1950792B4DDBB700DD1F2A /* Utilities.swift in Sources */,
 				BF19507C2B4DDD7500DD1F2A /* AuthenticationManager.swift in Sources */,
 				BF1950812B4DF76700DD1F2A /* SignInAppleHelper.swift in Sources */,
+				BF555AFC2B53DC33008DD232 /* SettingView.swift in Sources */,
+				BF555B082B567314008DD232 /* UserManager.swift in Sources */,
+				BF555B022B566E66008DD232 /* AuthenticationViewModel.swift in Sources */,
 				BF19507E2B4DE43400DD1F2A /* SignInGoogleHelper.swift in Sources */,
+				BF555B002B566E48008DD232 /* SettingViewModel.swift in Sources */,
+				BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */,
 				BF19506E2B4DD6C600DD1F2A /* AuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,9 +487,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.junhyuk.lim.Workhour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,9 +523,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.outlook.junhyuk.lim.Workhour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

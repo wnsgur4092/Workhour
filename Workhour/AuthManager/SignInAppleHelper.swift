@@ -14,8 +14,8 @@ import SwiftUI
 struct SignInWithAppleResult {
     let token : String
     let nonce : String
-    //    let name : String?
-    //    let email : String?
+    let name : String?
+    let email : String?
 }
 
 @MainActor
@@ -123,11 +123,11 @@ extension SignInAppleHelper: ASAuthorizationControllerDelegate {
             return
         }
         
-//        let name = appleIDCredential.fullName?.givenName
-//        let email = appleIDCredential.email
-//        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce, name: name, email: email)
+                let name = appleIDCredential.fullName?.givenName
+                let email = appleIDCredential.email
+        //        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce, name: name, email: email)
         
-        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce)
+        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce, name: name, email: email)
         completionHandler?(.success(tokens))
         
     }
