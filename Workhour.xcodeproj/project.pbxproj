@@ -51,6 +51,7 @@
 		BF555B022B566E66008DD232 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B012B566E66008DD232 /* AuthenticationViewModel.swift */; };
 		BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B042B566E9D008DD232 /* ProfileView.swift */; };
 		BF555B082B567314008DD232 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B072B567314008DD232 /* UserManager.swift */; };
+		BFBBBBAD2B68FAE30070E614 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		BF555B012B566E66008DD232 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		BF555B042B566E9D008DD232 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF555B072B567314008DD232 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				BF555B042B566E9D008DD232 /* ProfileView.swift */,
+				BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				BF555B022B566E66008DD232 /* AuthenticationViewModel.swift in Sources */,
 				BF19507E2B4DE43400DD1F2A /* SignInGoogleHelper.swift in Sources */,
 				BF555B002B566E48008DD232 /* SettingViewModel.swift in Sources */,
+				BFBBBBAD2B68FAE30070E614 /* ProfileViewModel.swift in Sources */,
 				BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */,
 				BF19506E2B4DD6C600DD1F2A /* AuthenticationView.swift in Sources */,
 			);
