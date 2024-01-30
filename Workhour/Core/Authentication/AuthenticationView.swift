@@ -27,6 +27,7 @@ struct AuthenticationView: View {
                 }
             }
             
+            
             Button(action: {
                 Task{
                     do{
