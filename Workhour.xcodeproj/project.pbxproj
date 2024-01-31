@@ -52,6 +52,7 @@
 		BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B042B566E9D008DD232 /* ProfileView.swift */; };
 		BF555B082B567314008DD232 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B072B567314008DD232 /* UserManager.swift */; };
 		BFBBBBAD2B68FAE30070E614 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */; };
+		BFBBBBB42B6A3AC40070E614 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBB32B6A3AC40070E614 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		BF555B042B566E9D008DD232 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF555B072B567314008DD232 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BFBBBBB32B6A3AC40070E614 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1950272B4DBCCC00DD1F2A /* ContentView.swift */,
+				BFBBBBB32B6A3AC40070E614 /* MainView.swift */,
 				BF555B032B566E95008DD232 /* Profile */,
 				BF555AFE2B566E28008DD232 /* Settings */,
 				BF19506C2B4DD6B100DD1F2A /* Authentication */,
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1950282B4DBCCC00DD1F2A /* ContentView.swift in Sources */,
+				BFBBBBB42B6A3AC40070E614 /* MainView.swift in Sources */,
 				BF1950262B4DBCCC00DD1F2A /* WorkhourApp.swift in Sources */,
 				BF1950792B4DDBB700DD1F2A /* Utilities.swift in Sources */,
 				BF19507C2B4DDD7500DD1F2A /* AuthenticationManager.swift in Sources */,

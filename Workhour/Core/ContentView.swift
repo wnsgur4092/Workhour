@@ -13,9 +13,7 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             if !showSignInView {
-                NavigationStack{
-                    ProfileView(showSignInView: $showSignInView)
-                }
+                MainView(showSignInView: $showSignInView)
             }
         }
         .onAppear{
