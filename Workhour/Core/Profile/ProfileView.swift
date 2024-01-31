@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     @StateObject private var viewModel = ProfileViewModel()
     @Binding var showSignInView : Bool
+    @Binding var selectedTab: Int
     
     var body: some View {
         VStack{
@@ -33,8 +34,12 @@ struct ProfileView: View {
                 Spacer()
             }
 
-            
-            //
+
+            Button("Go to Category View") {
+                print("Current Tab: \(selectedTab)")  // 현재 탭 출력
+                selectedTab = 1
+                print("New Tab: \(selectedTab)")  // 변경된 탭 출력
+            }
             
             
             
@@ -61,7 +66,7 @@ struct ProfileView: View {
 
 #Preview {
     NavigationStack{
-        ProfileView(showSignInView: .constant(false))
+        ProfileView(showSignInView: .constant(false), selectedTab: .constant(0))
     }
 }
 

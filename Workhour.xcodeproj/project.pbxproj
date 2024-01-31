@@ -53,6 +53,7 @@
 		BF555B082B567314008DD232 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF555B072B567314008DD232 /* UserManager.swift */; };
 		BFBBBBAD2B68FAE30070E614 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */; };
 		BFBBBBB42B6A3AC40070E614 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBB32B6A3AC40070E614 /* MainView.swift */; };
+		BFBBBBB72B6A3D110070E614 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBBBB62B6A3D110070E614 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		BF555B072B567314008DD232 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		BFBBBBAC2B68FAE30070E614 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		BFBBBBB32B6A3AC40070E614 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BFBBBBB62B6A3D110070E614 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				BF1950272B4DBCCC00DD1F2A /* ContentView.swift */,
 				BFBBBBB32B6A3AC40070E614 /* MainView.swift */,
 				BF555B032B566E95008DD232 /* Profile */,
+				BFBBBBB52B6A3D090070E614 /* Category */,
 				BF555AFE2B566E28008DD232 /* Settings */,
 				BF19506C2B4DD6B100DD1F2A /* Authentication */,
 			);
@@ -222,6 +225,14 @@
 				BF555B072B567314008DD232 /* UserManager.swift */,
 			);
 			path = Firestore;
+			sourceTree = "<group>";
+		};
+		BFBBBBB52B6A3D090070E614 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBBBB62B6A3D110070E614 /* CategoryView.swift */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 				BFBBBBAD2B68FAE30070E614 /* ProfileViewModel.swift in Sources */,
 				BF555B052B566E9D008DD232 /* ProfileView.swift in Sources */,
 				BF19506E2B4DD6C600DD1F2A /* AuthenticationView.swift in Sources */,
+				BFBBBBB72B6A3D110070E614 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
